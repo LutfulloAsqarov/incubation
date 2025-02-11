@@ -23,10 +23,37 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                flex-direction: column;
+                gap: 30px;
             }
             .img h1 {
                 color: #fff;
                 font-size: 100px;
+            }
+            .img p {
+                color: #fff;
+                font-size: 40px;
+                font-weight: 800;
+            }
+            .img p span {
+                color: #bebebe;
+                font-weight: 500;
+            }
+            @media (max-width: 1000px) {
+                .img h1 {
+                    font-size: 60px;
+                }
+                .img p {
+                    font-size: 32px;
+                }
+            }
+            @media (max-width: 700px) {
+                .img h1 {
+                    font-size: 40px;
+                }
+                .img p {
+                    font-size: 24px;
+                }
             }
         </style>
     </head>
@@ -34,6 +61,7 @@
         <div class="container">
             <div class="img">
                 <h1>Incubation.uz</h1>
+                <p><span>for sale:</span> 1 000 000$</p>
             </div>
         </div>
     </body>
