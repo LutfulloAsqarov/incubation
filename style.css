@@ -6,9 +6,15 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Arial", sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 0 16px;
+    margin: 0 auto;
 }
 
 /* Header Section */
@@ -44,9 +50,15 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
+header .menu {
+    width: 30px;
+    display: none;
+    cursor: pointer;
+}
+
 /* Home Section */
 section#home {
-    background-image: url('homepic.jpg');
+    background-image: url("homepic.jpg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -86,12 +98,18 @@ section#services {
 .service {
     text-align: center;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 .service h3 {
     font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.service img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* About Section */
@@ -144,7 +162,8 @@ section#contact {
     padding: 50px 0;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
@@ -173,4 +192,26 @@ footer {
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+@media (max-width: 1024px) {
+    header #logo {
+        width: 100px;
+    }
+    header nav {
+        display: none;
+    }
+    header h1 {
+        display: none;
+    }
+    header .menu {
+        display: block;
+    }
+    .home-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    .service h3 {
+        font-size: 24px;
+    }
 }
